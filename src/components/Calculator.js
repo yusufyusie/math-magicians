@@ -18,6 +18,25 @@ function Calculator() {
       </button>,
     );
   });
+
+  return (
+    <div className="wrapper">
+      {' '}
+      <div className="show-input">{input}</div>
+      <div className="digits flex">{calcBtns}</div>
+      <div className="modifiers subgrid">
+
+        {/* clear button */}
+        <button
+          type="button"
+          onClick={() => setInput(input.substr(0, input.length - 1))}
+        >
+          Clear
+        </button>
+      </div>
+
+    </div>
+  );
 }
 
 export default Calculator;
