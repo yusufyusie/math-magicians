@@ -33,7 +33,7 @@ body {
     background-color: #efefef;
   }
 
-  /* All things Grid, Flexbox, Box Alignment */
+  /* Add Grid, Flexbox, Box Alignment */
 .wrapper,
 .subgrid {
   display: grid;
