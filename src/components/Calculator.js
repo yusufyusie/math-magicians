@@ -33,6 +33,15 @@ function Calculator() {
         >
           Clear
         </button>
+
+        {/* clear all */}
+        <button
+          type="button"
+          onClick={() => setInput('')}
+          value=""
+        >
+          AC
+        </button>
       </div>
 
     </div>
