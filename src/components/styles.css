@@ -9,36 +9,9 @@ body {
 }
 
 .wrapper {
-    max-width: 26rem;
-    min-height: 96vh;
-    margin: 0 auto;
-  }
-
-  button {
-    font-size: 2rem;
-    border: 1px solid #333;
-    cursor: pointer;
-  }
-
-  .modifiers button {
-    background-color: #ccc;
-  }
-
-  .operations button {
-    background-color: orange;
-    width: 100px;
-  }
-
-  .digits button {
-    background-color: #efefef;
-  }
-
-  /* Add Grid, Flexbox, Box Alignment */
-.wrapper,
-.subgrid {
-  display: grid;
-}
-.wrapper {
+  max-width: 26rem;
+  min-height: 96vh;
+  margin: 0 auto;
   grid-template-areas:
     "total total total total"
     "modif modif modif oper"
@@ -49,7 +22,29 @@ body {
   grid-auto-columns: 1fr;
 }
 
+button {
+  font-size: 2rem;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.modifiers button {
+  background-color: #ccc;
+}
+
+.operations button {
+  background-color: orange;
+  width: 100px;
+}
+
+/* Add Grid, Flexbox, Box Alignment */
+.wrapper,
+.subgrid {
+  display: grid;
+}
+
 .show-input {
+  display: flex;
   grid-area: total;
   background-color: #858694;
   color: #fff;
@@ -58,11 +53,10 @@ body {
 }
 
 .modifiers {
-    background-color: #efefef;
-}
-
-.modifiers {
   grid-area: modif;
+  background-color: #efefef;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
 }
 
 .operations {
@@ -71,25 +65,11 @@ body {
 
 .digits {
   grid-area: digit;
-}
-
-.show-input {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 2rem;
-}
-
-.modifiers {
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-}
-
-.digits {
   display: flex;
   flex-wrap: wrap;
 }
 
 .digits button {
   flex: 1 0 26%;
+  background-color: #efefef;
 }
