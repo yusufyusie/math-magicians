@@ -15,7 +15,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [� Getting Started ](#-getting-started-)
+  - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
@@ -134,11 +134,8 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Scientific calculation feature can be added**
+- [ ] **Neumorphism style on calculator can be added**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -182,8 +179,6 @@ Give a ⭐️ if you like this project!
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
