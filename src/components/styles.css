@@ -51,6 +51,14 @@ body {
 
 .show-input {
   grid-area: total;
+  background-color: #858694;
+  color: #fff;
+  text-align: right;
+  padding-left: 23rem;
+}
+
+.modifiers {
+    background-color: #efefef;
 }
 
 .modifiers {
