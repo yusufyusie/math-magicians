@@ -7,3 +7,28 @@ body {
   padding: 0;
   font-family: "Lora", serif;
 }
+
+.wrapper {
+    max-width: 26rem;
+    min-height: 96vh;
+    margin: 0 auto;
+  }
+
+  button {
+    font-size: 2rem;
+    border: 1px solid #333;
+    cursor: pointer;
+  }
+
+  .modifiers button {
+    background-color: #ccc;
+  }
+
+  .operations button {
+    background-color: orange;
+    width: 100px;
+  }
+  
+  .digits button {
+    background-color: #efefef;
+  }
