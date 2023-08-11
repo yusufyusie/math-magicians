@@ -4,7 +4,7 @@ import './styles.css';
 function Calculator() {
   const [input, setInput] = useState('');
   const calcBtns = [];
-  [9, 8, 7, 6, 5, 4, 3, 2, 1, 0, '.', '%'].forEach((item) => {
+  [7, 8, 9, 4, 5, 6, 1, 2, 3, 0, '.'].forEach((item) => {
     calcBtns.push(
       <button
         type="button"
@@ -27,26 +27,40 @@ function Calculator() {
       <div className="digits flex">{calcBtns}</div>
       <div className="modifiers subgrid">
 
-        {/* clear button */}
-        <button
-          type="button"
-        >
-          Clear
-        </button>
-
         {/* clear all */}
         <button
           type="button"
         >
           AC
         </button>
+
+        {/* plus or minus button */}
+        <button
+          type="button"
+        >
+          +/-
+        </button>
+
+        {/* percent button */}
+        <button
+          type="button"
+        >
+          %
+        </button>
       </div>
 
       <div className="operations subgrid">
 
-        {/* add button */}
+        {/* division btn */}
         <button type="button">
-          +
+          {' '}
+          ÷
+        </button>
+
+        {/* multiplication btn */}
+        <button type="button">
+          {' '}
+          x
         </button>
 
         {/* minus btn */}
@@ -56,14 +70,9 @@ function Calculator() {
           {' '}
         </button>
 
+        {/* add button */}
         <button type="button">
-          {' '}
-          *
-        </button>
-
-        <button type="button">
-          {' '}
-          /
+          +
         </button>
 
         {/* "=" btn */}
