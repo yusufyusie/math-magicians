@@ -29,7 +29,6 @@ function Calculator() {
         {/* clear button */}
         <button
           type="button"
-          onClick={() => setInput(input.substr(0, input.length - 1))}
         >
           Clear
         </button>
@@ -37,13 +36,42 @@ function Calculator() {
         {/* clear all */}
         <button
           type="button"
-          onClick={() => setInput('')}
-          value=""
         >
           AC
         </button>
       </div>
 
+      <div className="operations subgrid">
+
+        {/* add button */}
+        <button type="button">
+          +
+        </button>
+
+        {/* minus btn */}
+        <button type="button">
+          {' '}
+          -
+          {' '}
+        </button>
+
+        <button type="button">
+          {' '}
+          *
+        </button>
+
+        <button type="button">
+          {' '}
+          /
+        </button>
+
+        {/* "=" btn */}
+        <button
+          type="button"
+        >
+          =
+        </button>
+      </div>
     </div>
   );
 }
