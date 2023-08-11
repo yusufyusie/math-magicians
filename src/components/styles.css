@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+}
+
+.wrapper {
+  max-width: 26rem;
+  min-height: 96vh;
+  margin: 0 auto;
+  grid-template-areas:
+    "total total total total"
+    "modif modif modif oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper";
+  grid-auto-columns: 1fr;
+}
+
+button {
+  font-size: 2rem;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.modifiers button {
+  background-color: #ccc;
+}
+
+.operations button {
+  background-color: orange;
+  width: 100px;
+}
+
+/* Add Grid, Flexbox, Box Alignment */
+.wrapper,
+.subgrid {
+  display: grid;
+}
+
+.show-input {
+  display: flex;
+  grid-area: total;
+  background-color: #858694;
+  color: #fff;
+  text-align: right;
+  padding-left: 23rem;
+}
+
+.modifiers {
+  grid-area: modif;
+  background-color: #efefef;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.operations {
+  grid-area: oper;
+}
+
+.digits {
+  grid-area: digit;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button {
+  flex: 1 0 26%;
+  background-color: #efefef;
+}
