@@ -165,28 +165,29 @@ function Calculator() {
           +
         </button>
 
-        {/* "=" btn */}
         <button
-          type="button"
-          onClick={(e) => {
-            try {
-              setInput(
-                String(eval(input)).length > 3
-                    && String(eval(input)).includes('.')
-                  ? String(eval(input).toFixed(4))
-                  : String(eval(input)),
-              );
-            } catch (e) {
-              console.log(e);
-            }
-          }}
-          value="="
+        type="button"
+        onClick={onbuttonclick}
+        className="zero button number"
         >
-          =
+        0
         </button>
-      </div>
-    </div>
-  );
-}
+        <button
+        type="button"
+        onClick={onbuttonclick}
+        className="dot button items"
+        >
+        .
+        </button>
+        <button
+        type="button"
+        onClick={onbuttonclick}
+        className="equal button items"
+        >
+        =
+        </button>
+        </div>
+        );
+};
 
 export default Calculator;
