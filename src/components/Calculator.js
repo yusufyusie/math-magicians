@@ -56,8 +56,10 @@ function Calculator() {
 
         {/* percent button */}
         <button
-          type="button"
-        >
+        type="button"
+        onClick={onbuttonclick}
+        className="module button operator"
+      >
           %
         </button>
       </div>
