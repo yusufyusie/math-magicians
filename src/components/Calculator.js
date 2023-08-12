@@ -25,7 +25,7 @@ function Calculator() {
   const { total, next, operation } = input;
 
   return (
-    <div className="grid-calculator">
+    < className="grid-calculator">
       <button
         type="button"
         className="input button items"
@@ -54,7 +54,7 @@ function Calculator() {
           +/-
         </button>
 
-        {/* percent button */}
+        {/* module button operator button */}
         <button
         type="button"
         onClick={onbuttonclick}
@@ -62,17 +62,13 @@ function Calculator() {
       >
           %
         </button>
-      </div>
-
-      <div className="operations subgrid">
 
         {/* division btn */}
         <button
-          type="button"
-          onClick={onbuttonclick}
-          className="equal button items"
-        >
-          {' '}
+        type="button"
+        onClick={onbuttonclick}
+        className="divided operator button"
+      >
           ÷
         </button>
 
