@@ -47,8 +47,10 @@ function Calculator() {
 
         {/* plus or minus button */}
         <button
-          type="button"
-        >
+        type="button"
+        onClick={onbuttonclick}
+        className="sign button items"
+      >
           +/-
         </button>
 
