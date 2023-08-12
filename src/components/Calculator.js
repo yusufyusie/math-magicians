@@ -126,8 +126,11 @@ function Calculator() {
         </button>
 
         {/* minus btn */}
-        <button type="button" onClick={(e) => setInput(input + e.target.value)} value="-">
-          {' '}
+        <button
+        type="button"
+        onClick={onbuttonclick}
+        className="minus operator button"
+      >
           -
           {' '}
         </button>
