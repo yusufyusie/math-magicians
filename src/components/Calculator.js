@@ -72,6 +72,28 @@ function Calculator() {
           ÷
         </button>
 
+        <button
+        type="button"
+        className="seven button number"
+        onClick={onbuttonclick}
+        >
+        7
+        </button>
+        <button
+        type="button"
+        className="eight button number"
+        onClick={onbuttonclick}
+        >
+        8
+        </button>
+        <button
+        type="button"
+        onClick={onbuttonclick}
+        className="nine button number"
+        >
+        9
+        </button>
+
         {/* multiplication btn */}
         <button type="button" onClick={(e) => setInput(input + e.target.value)} value="x">
           {' '}
