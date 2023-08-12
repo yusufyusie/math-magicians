@@ -103,6 +103,28 @@ function Calculator() {
           x
         </button>
 
+        <button
+        type="button"
+        onClick={onbuttonclick}
+        className="four button number"
+        >
+        4
+        </button>
+        <button
+        type="button"
+        onClick={onbuttonclick}
+        className="five button number"
+        >
+        5
+        </button>
+        <button
+        type="button"
+        onClick={onbuttonclick}
+        className="six button number"
+        >
+        6
+        </button>
+
         {/* minus btn */}
         <button type="button" onClick={(e) => setInput(input + e.target.value)} value="-">
           {' '}
