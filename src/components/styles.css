@@ -8,68 +8,140 @@ body {
   font-family: "Lora", serif;
 }
 
-.wrapper {
+.grid-calculator {
   max-width: 26rem;
   min-height: 96vh;
+  display: grid;
   margin: 0 auto;
   grid-template-areas:
-    "total total total total"
-    "modif modif modif oper"
-    "digit digit digit oper"
-    "digit digit digit oper"
-    "digit digit digit oper"
-    "digit digit digit oper";
+    'input input input input'
+    'clear sign module divided'
+    'seven eight nine times'
+    'four five six plus'
+    'one two three minus'
+    'zero zero dot equal';
   grid-auto-columns: 1fr;
 }
 
-button {
+.grid-calculator > button {
+  text-align: center;
+  padding: 15px 30px;
+  font-size: 15px;
   font-size: 2rem;
   border: 1px solid #333;
   cursor: pointer;
 }
 
-.modifiers button {
-  background-color: #ccc;
-}
-
-.operations button {
-  background-color: orange;
-  width: 100px;
-}
-
-/* Add Grid, Flexbox, Box Alignment */
-.wrapper,
-.subgrid {
-  display: grid;
-}
-
-.show-input {
-  display: flex;
-  grid-area: total;
+.grid-calculator > .input {
+  grid-area: input;
   background-color: #858694;
   color: #fff;
   text-align: right;
-  padding-left: 23rem;
+  padding-right: 2px;
+  font-size: 15px;
 }
 
-.modifiers {
-  grid-area: modif;
+.equal {
+  grid-area: equal;
+  background-color: #f5913e;
+}
+
+.plus {
+  grid-area: plus;
+  background-color: #f5913e;
+}
+
+.clear {
+  grid-area: clear;
+  background-color: #e0e0e0;
+}
+
+.sign {
+  grid-area: sign;
+  background-color: #e0e0e0;
+}
+
+.module {
+  grid-area: module;
+  background-color: #e0e0e0;
+}
+
+.times {
+  grid-area: times;
+  background-color: #f5913e;
+}
+
+.divided {
+  grid-area: divided;
+  background-color: #f5913e;
+}
+
+.minus {
+  grid-area: minus;
+  background-color: #f5913e;
+}
+
+.dot {
+  grid-area: dot;
+  background-color: #e0e0e0;
+}
+
+.one {
+  grid-area: one;
+  flex: 1 0 26%;
   background-color: #efefef;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
 }
 
-.operations {
-  grid-area: oper;
+.two {
+  grid-area: two;
+  flex: 1 0 26%;
+  background-color: #efefef;
 }
 
-.digits {
-  grid-area: digit;
-  display: flex;
-  flex-wrap: wrap;
+.three {
+  grid-area: three;
+  flex: 1 0 26%;
+  background-color: #efefef;
 }
 
-.digits button {
+.four {
+  grid-area: four;
+  flex: 1 0 26%;
+  background-color: #efefef;
+}
+
+.five {
+  grid-area: five;
+  flex: 1 0 26%;
+  background-color: #efefef;
+}
+
+.six {
+  grid-area: six;
+  flex: 1 0 26%;
+  background-color: #efefef;
+}
+
+.seven {
+  grid-area: seven;
+  flex: 1 0 26%;
+  background-color: #efefef;
+}
+
+.eight {
+  grid-area: eight;
+  flex: 1 0 26%;
+  background-color: #efefef;
+}
+
+.nine {
+  grid-area: nine;
+  flex: 1 0 26%;
+  background-color: #efefef;
+}
+
+.zero {
+  grid-area: zero;
   flex: 1 0 26%;
   background-color: #efefef;
 }
