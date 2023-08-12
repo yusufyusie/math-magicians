@@ -14,12 +14,12 @@ body {
   display: grid;
   margin: 0 auto;
   grid-template-areas:
-  'input input input input'
-  'clear sign module divided'
-  'seven eight nine times'
-  'four five six plus'
-  'one two three minus'
-  'zero zero dot equal';
+    'input input input input'
+    'clear sign module divided'
+    'seven eight nine times'
+    'four five six plus'
+    'one two three minus'
+    'zero zero dot equal';
   grid-auto-columns: 1fr;
 }
 
