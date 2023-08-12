@@ -95,8 +95,11 @@ function Calculator() {
         </button>
 
         {/* multiplication btn */}
-        <button type="button" onClick={(e) => setInput(input + e.target.value)} value="x">
-          {' '}
+        <button
+        type="button"
+        onClick={onbuttonclick}
+        className="times button operator"
+      >
           x
         </button>
 
