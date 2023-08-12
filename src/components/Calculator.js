@@ -132,7 +132,28 @@ function Calculator() {
         className="minus operator button"
       >
           -
-          {' '}
+        </button>
+
+        <button
+        type="button"
+        onClick={onbuttonclick}
+        className="three button number"
+        >
+        3
+        </button>
+        <button
+        type="button"
+        onClick={onbuttonclick}
+        className="two button number"
+        >
+        2
+        </button>
+        <button
+        type="button"
+        onClick={onbuttonclick}
+        className="one button number"
+        >
+        1
         </button>
 
         {/* add button */}
