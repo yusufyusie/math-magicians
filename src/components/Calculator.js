@@ -157,7 +157,11 @@ function Calculator() {
         </button>
 
         {/* add button */}
-        <button type="button">
+        <button
+        type="button"
+        onClick={onbuttonclick}
+        className="plus operator button"
+      >
           +
         </button>
 
