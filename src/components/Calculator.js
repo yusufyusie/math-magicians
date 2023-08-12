@@ -3,35 +3,45 @@ import calculate from '../logic/calculate';
 import './styles.css';
 
 function Calculator() {
-  const [input, setInput] = useState('');
-  const calcBtns = [];
-  [7, 8, 9, 4, 5, 6, 1, 2, 3, 0, '.'].forEach((item) => {
-    calcBtns.push(
-      <button
-        type="button"
-        onClick={(e) => {
-          setInput(input + e.target.value);
-        }}
-        value={item}
-        key={item}
-      >
-        {' '}
-        {item}
-      </button>,
-    );
+  const [input, setInput] = useState({
+    total: 0,
+    next: null,
+    operation: null,
   });
 
+  const displayResult = (e) => {
+    const name = e.target.textContent;
+    setInput((prev) => ({
+      ...prev,
+      total: name,
+    }));
+  };
+
+   const onbuttonclick = (e) => {
+    const keyValue = e.target.textContent;
+    const result = calculate(input, keyValue);
+    setInput(result);
+  };
+  const { total, next, operation } = input;
+
   return (
-    <div className="wrapper">
-      {' '}
-      <div className="show-input">{input}</div>
-      <div className="digits flex">{calcBtns}</div>
-      <div className="modifiers subgrid">
+    <div className="grid-calculator">
+      <button
+        type="button"
+        className="input button items"
+        onChange={displayResult}
+      >
+        {total}
+        {operation}
+        {next}
+      </button>
 
         {/* clear all */}
         <button
-          type="button"
-        >
+        type="button"
+        className="clear button items"
+        onClick={onbuttonclick}
+      >
           AC
         </button>
 
@@ -53,19 +63,23 @@ function Calculator() {
       <div className="operations subgrid">
 
         {/* division btn */}
-        <button type="button">
+        <button
+          type="button"
+          onClick={onbuttonclick}
+          className="equal button items"
+        >
           {' '}
           ÷
         </button>
 
         {/* multiplication btn */}
-        <button type="button">
+        <button type="button" onClick={(e) => setInput(input + e.target.value)} value="x">
           {' '}
           x
         </button>
 
         {/* minus btn */}
-        <button type="button">
+        <button type="button" onClick={(e) => setInput(input + e.target.value)} value="-">
           {' '}
           -
           {' '}
@@ -79,6 +93,19 @@ function Calculator() {
         {/* "=" btn */}
         <button
           type="button"
+          onClick={(e) => {
+            try {
+              setInput(
+                String(eval(input)).length > 3
+                    && String(eval(input)).includes('.')
+                  ? String(eval(input).toFixed(4))
+                  : String(eval(input)),
+              );
+            } catch (e) {
+              console.log(e);
+            }
+          }}
+          value="="
         >
           =
         </button>
