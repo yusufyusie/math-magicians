@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function DisplayQuote() {
   const [data, setData] = useState([{ quote: '', author: '', category: '' }]);
+  const [count, setCount] = useState(0);
   const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const url = 'https://api.api-ninjas.com/v1/quotes?';
@@ -20,6 +21,7 @@ function DisplayQuote() {
         });
         const json = await response.json();
         setData(json);
+        setCount((c) => c + 1);
       } catch (error) {
         setError(true);
       }
@@ -36,6 +38,13 @@ function DisplayQuote() {
       <q>{ data[0].quote }</q>
       <p><b>{ data[0].author }</b></p>
       <q>{ data[0].category }</q>
+      <p>
+        You have read
+        {' '}
+        <strong>{ count }</strong>
+        {' '}
+        pieces of quotes
+      </p>
     </section>
   );
 }
