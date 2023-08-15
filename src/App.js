@@ -4,6 +4,8 @@ import DisplayQuote from './components/Quote';
 import Home from './components/Home';
 import './App.css';
 import Navbar from './components/Navbar';
+import NotMatch from '../../routes/NotMatch';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/quote" element={<DisplayQuote />} />
+          <Route path="*" element={<NotMatch />} />
         </Routes>
       </div>
     </main>
