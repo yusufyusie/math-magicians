@@ -6,7 +6,6 @@ import './App.css';
 import Navbar from './components/Navbar';
 import NotMatch from './components/NotMatch';
 
-
 function App() {
   return (
     <main>

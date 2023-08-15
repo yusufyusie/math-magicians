@@ -1,5 +1,5 @@
 function getParagraph() {
-    const str = ` Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptatibus
+  const str = ` Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptatibus
     dolorum omnis? Optio facilis animi id saepe magni voluptatibus similique deserunt,
     eum quae tempore, obcaecati, cupiditate officiis illum repellendus molestias aliquid
     atque repudiandae. Assumenda eligendi doloribus nobis vel. Minima tempore necessitatibus
@@ -13,22 +13,21 @@ function getParagraph() {
     amet, at ratione! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit,
     consequuntur iure impedit corporis, debitis, dolorum laborum nam ipsum voluptates ducimus
     quisquam sapiente velit quas mollitia.`;
-    return str;
-  }
-  
-  function Home() {
-    return (
-      <div>
-        <h3>Welcome to Our page</h3>
-        <p>
-          {getParagraph()}
-        </p>
-        <p>
-          {getParagraph()}
-        </p>
-      </div>
-    );
-  }
-  
-  export default Home;
-  
+  return str;
+}
+
+function Home() {
+  return (
+    <div>
+      <h3>Welcome to Our page</h3>
+      <p>
+        {getParagraph()}
+      </p>
+      <p>
+        {getParagraph()}
+      </p>
+    </div>
+  );
+}
+
+export default Home;
