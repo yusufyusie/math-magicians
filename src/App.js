@@ -4,7 +4,7 @@ import DisplayQuote from './components/Quote';
 import Home from './components/Home';
 import './App.css';
 import Navbar from './components/Navbar';
-import NotMatch from '../../routes/NotMatch';
+import NotMatch from './components/NotMatch';
 
 
 function App() {
