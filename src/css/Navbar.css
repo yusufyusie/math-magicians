@@ -1,0 +1,27 @@
+.nav-bar {
+    padding: 0.1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+    border: 0;
+  }
+  
+  nav h1 {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  .nav-ul {
+    padding: 0 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    font-size: 1.5rem;
+  }
+  

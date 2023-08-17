@@ -1,3 +1,6 @@
+import '../css/Home.css';
+import './styles.css';
+
 function getParagraph() {
   const str = ` Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptatibus
     dolorum omnis? Optio facilis animi id saepe magni voluptatibus similique deserunt,
@@ -8,6 +11,7 @@ function getParagraph() {
     inventore maxime necessitatibus sit ad dolores doloremque laudantium unde voluptatibus.
     Sed, ut iste! Quidem eveniet iste a porro enim ratione assumenda reprehenderit, quaerat facere
     nostrum, iure, eos consequatur tenetur. Et, aperiam?
+    
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, aspernatur! Blanditiis
     dignissimos sed rerum, animi quia eligendi exercitationem laborum eius, culpa consequuntur
     amet, at ratione! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit,

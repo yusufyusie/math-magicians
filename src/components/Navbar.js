@@ -1,4 +1,6 @@
 import { NavLink } from 'react-router-dom';
+import '../css/Navbar.css';
+import './styles.css';
 
 function Navbar() {
   return (
@@ -9,7 +11,7 @@ function Navbar() {
           <NavLink
             className="nav-link"
             style={({ isActive }) => ({
-              color: isActive ? 'white' : '#4f2f2f',
+              color: isActive ? '#fed136' : '#fff;',
             })}
             to="/"
           >
@@ -21,7 +23,7 @@ function Navbar() {
           <NavLink
             className="nav-link"
             style={({ isActive }) => ({
-              color: isActive ? 'white' : '#4f2f2f',
+              color: isActive ? '#fed136' : '#fff;',
             })}
             to="/calculator"
           >
@@ -33,9 +35,9 @@ function Navbar() {
           <NavLink
             className="nav-link"
             style={({ isActive }) => ({
-              color: isActive ? 'white' : '#4f2f2f',
+              color: isActive ? '#fed136' : '#fff;',
             })}
-            to="/quote"
+            to="quotes"
           >
             Quote
           </NavLink>
