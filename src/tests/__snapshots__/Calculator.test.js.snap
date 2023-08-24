@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator component should render correctly 1`] = `
+<section
+  className="page-container"
+>
+  <h2>
+    Let's do some math!
+  </h2>
+  <div
+    className="grid-calculator"
+  >
+    <button
+      className="input button items"
+      onChange={[Function]}
+      type="button"
+    >
+      0
+    </button>
+    <button
+      className="clear button items"
+      onClick={[Function]}
+      type="button"
+    >
+      AC
+    </button>
+    <button
+      className="sign button items"
+      onClick={[Function]}
+      type="button"
+    >
+      +/-
+    </button>
+    <button
+      className="module button operator"
+      onClick={[Function]}
+      type="button"
+    >
+      %
+    </button>
+    <button
+      className="divided operator button"
+      onClick={[Function]}
+      type="button"
+    >
+      ÷
+    </button>
+    <button
+      className="seven button number"
+      onClick={[Function]}
+      type="button"
+    >
+      7
+    </button>
+    <button
+      className="eight button number"
+      onClick={[Function]}
+      type="button"
+    >
+      8
+    </button>
+    <button
+      className="nine button number"
+      onClick={[Function]}
+      type="button"
+    >
+      9
+    </button>
+    <button
+      className="times button operator"
+      onClick={[Function]}
+      type="button"
+    >
+      x
+    </button>
+    <button
+      className="four button number"
+      onClick={[Function]}
+      type="button"
+    >
+      4
+    </button>
+    <button
+      className="five button number"
+      onClick={[Function]}
+      type="button"
+    >
+      5
+    </button>
+    <button
+      className="six button number"
+      onClick={[Function]}
+      type="button"
+    >
+      6
+    </button>
+    <button
+      className="minus operator button"
+      onClick={[Function]}
+      type="button"
+    >
+      -
+    </button>
+    <button
+      className="three button number"
+      onClick={[Function]}
+      type="button"
+    >
+      3
+    </button>
+    <button
+      className="two button number"
+      onClick={[Function]}
+      type="button"
+    >
+      2
+    </button>
+    <button
+      className="one button number"
+      onClick={[Function]}
+      type="button"
+    >
+      1
+    </button>
+    <button
+      className="plus operator button"
+      onClick={[Function]}
+      type="button"
+    >
+      +
+    </button>
+    <button
+      className="zero button number"
+      onClick={[Function]}
+      type="button"
+    >
+      0
+    </button>
+    <button
+      className="dot button items"
+      onClick={[Function]}
+      type="button"
+    >
+      .
+    </button>
+    <button
+      className="equal button items"
+      onClick={[Function]}
+      type="button"
+    >
+      =
+    </button>
+  </div>
+</section>
+`;
