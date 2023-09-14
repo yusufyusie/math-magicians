@@ -15,6 +15,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+    - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -34,7 +35,7 @@
 
 # 📖 Math-Magicians <a name="about-project"></a>
 
-**Math-Magicians** is a Single Page Application (SPA) that allows users to make simple calculations and read a random math-related quote.
+**Math-Magicians** is a single-page application (SPA) that allows users to make simple calculations and read a random math-related quote.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -57,7 +58,16 @@
 - **Make simple calculations**
 - **Displays a math_related quote**
 
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live demo](https://react-math-magicians-xz89.onrender.com)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
